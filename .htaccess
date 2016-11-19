@@ -1,0 +1,10 @@
+
+# 1 MIN
+<FilesMatch "\.(html|htm|php)$">
+Header set Cache-Control "max-age=60, private, proxy-revalidate"
+</FilesMatch>
+
+# 10 MIN
+<FilesMatch "\.(css|woff|jpg|jpeg|png|svg|gif|swf)$">
+ Header set Cache-Control "max-age=600, public"
+</FilesMatch>
